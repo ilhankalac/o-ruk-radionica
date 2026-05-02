@@ -1,0 +1,33 @@
+/* style.css — sa R4 (boje + tipografija) + R5 (Flexbox) */
+
+/* ====== R4: već imamo ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+header {
+  background-color: #1B4965;
+  color: white;
+  padding: 20px;
+}
+
+
+/* ====== R5: dodajemo Flexbox ====== */
+
+/* CARD GRID — container koji raspoređuje kartice */
+/* .card-grid { display, gap, flex-wrap, justify-content } */
+
+
+/* CARD — pojedinačna kartica */
+/* .card { background, border-radius, overflow, flex } */
+
+
+/* IMAGE unutar kartice */
+/* .card img { width, height, object-fit } */
+
+
+/* TEKST unutar kartice */
+/* .card h3, .card p { padding } */
