@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rožaje — moj sajt</title>
+</head>
+
+<!--
+  ============================================================
+  RADIONICA 2 — STRUKTURA (skelet sajta)
+  ============================================================
+  Cilj danas: dati sajtu PRAVI raspored, kao kod ozbiljnih sajtova.
+  HTML = skelet kuće. CSS (boje, namještaj) dolazi tek na R4.
+
+  Zato ova stranica izgleda "ružno" — TO JE NORMALNO I DOBRO.
+  Bitno je da ima ISPRAVNU strukturu.
+
+  Danas koristimo 6 novih tagova:
+    <header>   — vrh sajta (ime + slogan)
+    <main>     — glavni sadržaj (srce sajta)
+    <section>  — jedna cjelina unutar main-a
+    <footer>   — podnožje (copyright, kontakt)
+    <ul> <li>  — lista sa tačkicama (redoslijed NIJE bitan)
+    <ol> <li>  — numerisana lista (redoslijed JESTE bitan)
+    <a href>   — link (na drugi sajt, mejl ili sekciju)
+
+  Zadatak: napravi OVAKVU strukturu u SVOM sajtu,
+  pa zamijeni tekst svojim pravim sadržajem o Rožajama.
+  ============================================================
+-->
+
+<body>
+
+  <!-- HEADER: vrh sajta. Ovdje ide IME sajta (h1) i SLOGAN (p). -->
+  <header>
+    <h1>Moje Rožaje</h1>
+    <p>Planinski biser sjevera Crne Gore.</p>
+  </header>
+
+
+  <!-- MAIN: glavni sadržaj sajta. Unutar njega ide više sekcija. -->
+  <main>
+
+    <!-- SECTION 1: O Rožajama — naslov h2 + pasusi teksta -->
+    <section>
+      <h2>O Rožajama</h2>
+      <p>
+        Rožaje je grad na sjeveru Crne Gore, smješten u dolini rijeke Ibar,
+        okružen planinama Hajla, Žljeb i Mokra Gora. Poznato je po netaknutoj
+        prirodi, čistom vazduhu i gostoljubivim ljudima.
+      </p>
+      <p>
+        Grad se nalazi na oko 1.000 metara nadmorske visine, pa su ljeta
+        svježa, a zime snježne — savršeno i za planinarenje i za zimske sportove.
+      </p>
+
+      <!-- IMG: slika iz domaćeg. Zamijeni "rozaje.jpg" imenom svoje slike. -->
+      <img src="rozaje.jpg" alt="Pogled na Rožaje i okolne planine" width="400">
+    </section>
+
+
+    <!-- SECTION 2: Šta posjetiti — ovdje vježbamo LISTU (ul + li). -->
+    <section>
+      <h2>Šta posjetiti</h2>
+      <ul>
+        <li>Planina Hajla — najviši vrh u okolini, panoramski pogled</li>
+        <li>Kula Ganića — istorijski spomenik u centru grada</li>
+        <li>Park prirode Hajla — zaštićena oblast netaknute prirode</li>
+        <li>Izvor rijeke Ibar — popularno mjesto za izlete</li>
+      </ul>
+    </section>
+
+
+    <!--
+      SECTION 3: Kako doći do Rožaja — ovdje vježbamo <ol> (numerisana lista).
+      Razlika od <ul>: kod <ol> REDOSLIJED JE BITAN — to su koraci jedan
+      za drugim. Browser sam stavlja brojeve 1, 2, 3... ne kucamo ih mi.
+    -->
+    <section>
+      <h2>Kako doći do Rožaja</h2>
+      <ol>
+        <li>Iz Podgorice se voziš ka Beranama (oko 2 sata).</li>
+        <li>Iz Berana nastavljaš putem ka Rožajama (oko 30 minuta).</li>
+        <li>Ulaziš u dolinu rijeke Ibar — stigao/la si u Rožaje.</li>
+      </ol>
+    </section>
+
+
+    <!-- SECTION 4: Tradicionalna hrana — još jedna lista (vježba ul/li). -->
+    <section>
+      <h2>Tradicionalna hrana</h2>
+      <ul>
+        <li>Krompiruša</li>
+        <li>Mantije</li>
+        <li>Domaći sir i kajmak</li>
+        <li>Cicvara</li>
+      </ul>
+    </section>
+
+
+    <!-- SECTION 5: Korisni linkovi — ovdje vježbamo <a href> (link). -->
+    <section>
+      <h2>Korisni linkovi</h2>
+      <ul>
+        <!-- Link na DRUGI SAJT: href je puna adresa (počinje sa https://) -->
+        <li>
+          <a href="https://www.rozaje.me">Zvanični sajt opštine Rožaje</a>
+        </li>
+        <li>
+          <a href="https://sr.wikipedia.org/wiki/Rožaje">Rožaje na Wikipediji</a>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- SECTION 6: Kontakt — link na MEJL pravimo sa href="mailto:..." -->
+    <section>
+      <h2>Kontakt</h2>
+      <p>Imaš pitanje o Rožajama? Piši mi:</p>
+      <p>
+        <a href="mailto:moj.mejl@primjer.com">moj.mejl@primjer.com</a>
+      </p>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: podnožje sajta — copyright i sitni linkovi. -->
+  <footer>
+    <p>© 2026 Moje Rožaje — napravio/la <strong>(tvoje ime)</strong></p>
+    <ul>
+      <li><a href="#">O Rožajama</a></li>
+      <li><a href="#">Šta posjetiti</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
