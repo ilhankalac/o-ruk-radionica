@@ -1,4 +1,4 @@
-# Radionica 4 — Feedback i rezime
+# Radionica 3 — Feedback i rezime
 
 **Datum:** 24. maj 2026.
 **Tema:** CSS — boje, fontovi, prvi stilizovani sajt
@@ -67,10 +67,39 @@ Najbolji način — jedan CSS fajl povezan sa **svim stranicama** sajta. Promije
 - `background-color` — boja **pozadine**
 - `font-family` — koji **font** koristimo (npr. Poppins)
 - `font-size` — veličina fonta (npr. `32px`)
-- `padding` — razmak **unutra** (između sadržaja i ivice)
-- `margin` — razmak **spolja** (između elementa i drugih elemenata)
+- `padding` — razmak **unutra** (između sadržaja i ivice) — dio **box modela**
+- `margin` — razmak **spolja** (između elementa i drugih elemenata) — dio **box modela**
+- `border` — ivica oko elementa — dio **box modela**
 - `text-decoration: none` — sklanja podvlačenje linkova
 - `max-width` — maksimalna širina (da sajt ne bude beskonačno širok)
+
+### 📦 CSS Box Model
+
+Svaki element na stranici je u stvari **kutija** (box). Ta kutija ima 4 sloja, od centra ka spolja:
+
+```
+┌─────────────────────────────────┐
+│           MARGIN                │  ← razmak SPOLJA (gura druge elemente)
+│  ┌───────────────────────────┐  │
+│  │        BORDER             │  │  ← ivica kutije
+│  │  ┌─────────────────────┐  │  │
+│  │  │     PADDING         │  │  │  ← razmak UNUTRA (između sadržaja i border-a)
+│  │  │  ┌───────────────┐  │  │  │
+│  │  │  │   CONTENT     │  │  │  │  ← sam sadržaj (tekst, slika)
+│  │  │  └───────────────┘  │  │  │
+│  │  └─────────────────────┘  │  │
+│  └───────────────────────────┘  │
+└─────────────────────────────────┘
+```
+
+- **content** — ono što pišeš (tekst, slika)
+- **padding** — vazduh **unutar** kutije (između sadržaja i ivice)
+- **border** — sama ivica kutije
+- **margin** — vazduh **oko** kutije (gura druge elemente dalje)
+
+> **Trik za pamćenje:** `padding` je *unutrašnji* razmak (kao postava u jakni), `margin` je *spoljašnji* razmak (lični prostor između tebe i druge osobe).
+
+Box model je **najvažniji koncept u CSS-u** — kad shvatite zašto element zauzima toliko prostora koliko zauzima, sve ostalo postaje lakše.
 
 ### Sintaksa
 ```css
@@ -104,6 +133,7 @@ p {
 - Kako da povežete CSS sa HTML-om (`<link rel="stylesheet" href="style.css">` u `<head>`)
 - Razlika između **element selektora** (`h1`) i **class selektora** (`.title`)
 - Šta rade `color`, `background-color`, `font-family`, `font-size`, `padding`, `margin`
+- **CSS Box Model** — svaki element je kutija sa content / padding / border / margin
 - Da znate naći boju na **coolors.co** i kopirati **hex kod**
 - Kako se ubacuje **Google Font**
 
@@ -126,7 +156,7 @@ CSS cheatsheet ako želite da vidite više propertija (ne učiti napamet — kor
 
 ## 🔜 Šta radimo sljedeći put (ukratko)
 
-**Radionica 5 — CSS pozicioniranje i layout.** Naučili smo da damo boje i fontove, ali sve stoji jedno ispod drugog. Sljedeći put radimo **kako da rasporedimo stvari** — slike pored teksta, dvije kolone, navigacija u liniji, itd.
+**Radionica 4 — CSS pozicioniranje i layout.** Naučili smo da damo boje i fontove, ali sve stoji jedno ispod drugog. Sljedeći put radimo **kako da rasporedimo stvari** — slike pored teksta, dvije kolone, navigacija u liniji, itd.
 
 Novi propertiji koje ćemo dirati: `display`, `flexbox`, dodatni `margin`/`padding` trikovi.
 
@@ -138,14 +168,13 @@ Sjetite se: **HTML = skelet, CSS = boje i namještaj, layout = gdje šta stoji u
 
 1. Ako još niste, instalirajte **VS Code** + **Live Server** ekstenziju (objasnjeno u finalnom izvještaju sa Radionice 1)
 
-2. Napravite folder `r4/` pored ostalih:
+2. Napravite folder `r3/` pored ostalih:
 
    ```
    mzdpr_radionica/
      r1/
      r2/
      r3/
-     r4/
        class/
        exercises/
        notes.md
