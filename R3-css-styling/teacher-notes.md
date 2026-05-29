@@ -1,4 +1,4 @@
-# R4 — CSS Notes (kratko, za tebe)
+# R3 — CSS Notes (kratko, za tebe)
 
 ## Redoslijed (predlog)
 

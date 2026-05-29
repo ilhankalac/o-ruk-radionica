@@ -1,4 +1,4 @@
-# Radionica 4 — CSS Styling (boje + tipografija)
+# Radionica 3 — CSS Styling (boje + tipografija)
 
 **Trajanje:** 2h | **Cilj:** Sajt prestaje izgledati kao Word dokument iz 1995. **Prvi pravi "wow" trenutak kursa.**
 
@@ -92,7 +92,7 @@ Svako primjenjuje paletu na svoj sajt. Plus:
 > **Bonus za brže:** drugi font za body (sans-serif), display font za naslove. **Maksimalno 2 fonta** — pravilo dobrog dizajna.
 
 #### Beleške
-`workshops/R4-css-styling/notes.md` — uključi i hex kodove svoje palete.
+`workshops/R3-css-styling/notes.md` — uključi i hex kodove svoje palete.
 
 ### 1:55–2:00 — Show & tell
 Svaki tim pokazuje **prije/poslije**: jedna stranica bez CSS, ista sa CSS. Reakcija će biti glasna.

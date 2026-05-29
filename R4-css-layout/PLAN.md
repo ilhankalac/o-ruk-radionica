@@ -1,4 +1,4 @@
-# Radionica 5 — CSS Layout (Flexbox kartice)
+# Radionica 4 — CSS Layout (Flexbox kartice)
 
 **Trajanje:** 2h | **Cilj:** Sajt izgleda kao **pravi sajt**, ne kao Word dokument. Kartice u redovima — Airbnb feeling.
 
@@ -114,7 +114,7 @@ Svako primjenjuje **isti pattern** na dvije svoje stranice:
 > **Drugi:** slike različitih veličina kvare ravnotežu. Rješenje: `object-fit: cover` + fiksna `height`.
 
 #### Beleške
-`workshops/R5-css-layout/notes.md` — opiši šta radi svaki od 4 propertyja.
+`workshops/R4-css-layout/notes.md` — opiši šta radi svaki od 4 propertyja.
 
 ### 1:50–2:00 — Show & tell
 Svaki tim pokazuje **stranicu sa karticama**. Tu prvi put kažu: **"OHOHO, izgleda kao pravi sajt!"** — iskoristi taj trenutak.

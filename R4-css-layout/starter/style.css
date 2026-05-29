@@ -1,6 +1,6 @@
-/* style.css — sa R4 (boje + tipografija) + R5 (Flexbox) */
+/* style.css — sa R3 (boje + tipografija) + R4 (Flexbox) */
 
-/* ====== R4: već imamo ====== */
+/* ====== R3: već imamo ====== */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #FAFAFA;
@@ -15,7 +15,9 @@ header {
 }
 
 
-/* ====== R5: dodajemo Flexbox ====== */
+
+
+/* ====== R4: dodajemo Flexbox ====== */
 
 /* CARD GRID — container koji raspoređuje kartice */
 /* .card-grid { display, gap, flex-wrap, justify-content } */

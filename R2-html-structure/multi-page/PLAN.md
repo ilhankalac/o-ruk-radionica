@@ -1,4 +1,4 @@
-# Radionica 3 — Multi-page (više stranica + navigacija)
+# Radionica 2 (nastavak) — Multi-page (više stranica + navigacija)
 
 **Trajanje:** 2h | **Cilj:** Lični sajt ima 5 stranica + navigaciju. Sajt prestaje biti "jedna stranica".
 
@@ -82,7 +82,7 @@ Svako u svom `my-rozaje-site/` pravi sve stranice:
 Lider tima: zip-uj cijeli `Marko-rozaje/` folder, kopiraj na **USB ili Google Drive**. Ovo je **obavezno** do R6 dok ne uvedemo Git.
 
 #### Beleške
-`workshops/R3-multi-page/notes.md`
+`workshops/R2-html-structure/notes.md`
 
 ### 1:50–2:00 — Show & tell
 Svaki tim klika **kroz svih 5 stranica** na projektoru. Pljesak.
