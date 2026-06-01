@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za vrh Hajla. Zamijeni fotografijom hajla-vrh.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija planinskog vrha Hajla">
+  <defs>
+    <linearGradient id="h-nebo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bcd8e6"/>
+      <stop offset="1" stop-color="#eaf1ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#h-nebo)"/>
+  <circle cx="640" cy="120" r="56" fill="#fff6df"/>
+  <!-- zadnji vrhovi -->
+  <path d="M0 400 L180 240 L340 400 L520 230 L700 380 L800 300 L800 600 L0 600 Z" fill="#7d97a8"/>
+  <!-- glavni vrh sa snijegom -->
+  <path d="M120 600 L400 180 L680 600 Z" fill="#56707f"/>
+  <path d="M400 180 L470 285 L430 300 L400 270 L370 305 L330 285 Z" fill="#f6fafb"/>
+  <path d="M330 285 L300 330 L360 320 L400 350 L450 318 L500 332 L470 285 L430 300 L400 270 L370 305 Z" fill="#eef4f6" opacity="0.9"/>
+  <text x="24" y="575" font-family="Inter, sans-serif" font-size="18" fill="#3d525d" opacity="0.55">placeholder · Hajla</text>
+</svg>

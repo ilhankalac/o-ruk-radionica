@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za karticu/sekciju Priroda. Zamijeni fotografijom. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija planina i šume">
+  <defs>
+    <linearGradient id="p-nebo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe3ec"/>
+      <stop offset="1" stop-color="#9fc3a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#p-nebo)"/>
+  <circle cx="640" cy="110" r="48" fill="#fff3d6"/>
+  <path d="M0 300 L160 180 L300 300 L420 200 L560 320 L700 210 L800 300 L800 450 L0 450 Z" fill="#5d8a63"/>
+  <path d="M380 224 L420 200 L460 226 L432 234 L420 228 L406 234 Z" fill="#f4f8f4"/>
+  <path d="M0 360 L200 270 L400 360 L600 280 L800 360 L800 450 L0 450 Z" fill="#3f6a4a"/>
+  <!-- jele -->
+  <g fill="#2f5238">
+    <path d="M120 420 L150 350 L180 420 Z"/>
+    <path d="M250 425 L280 360 L310 425 Z"/>
+    <path d="M520 425 L550 355 L580 425 Z"/>
+  </g>
+  <text x="24" y="430" font-family="Inter, sans-serif" font-size="16" fill="#1f3a28" opacity="0.55">placeholder · priroda</text>
+</svg>

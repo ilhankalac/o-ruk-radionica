@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za hero (panorama grada). Zamijeni fotografijom rozaje-panorama.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija planinske panorame">
+  <defs>
+    <linearGradient id="nebo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0b878"/>
+      <stop offset="0.55" stop-color="#c45a17"/>
+      <stop offset="1" stop-color="#7a3210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="720" fill="url(#nebo)"/>
+  <circle cx="1180" cy="230" r="90" fill="#ffe7c2" opacity="0.9"/>
+  <!-- dalji planinski vijenac -->
+  <path d="M0 470 L220 350 L420 440 L640 320 L880 460 L1100 330 L1340 450 L1600 360 L1600 720 L0 720 Z" fill="#8a3a0a" opacity="0.55"/>
+  <!-- srednji vijenac -->
+  <path d="M0 560 L260 430 L500 540 L760 410 L1020 540 L1280 430 L1600 540 L1600 720 L0 720 Z" fill="#6b2f0f" opacity="0.8"/>
+  <!-- prednji vijenac sa snijegom na vrhu -->
+  <path d="M0 660 L300 520 L560 640 L820 500 L1080 640 L1360 520 L1600 650 L1600 720 L0 720 Z" fill="#4a230c"/>
+  <path d="M780 522 L820 500 L860 522 L835 530 L820 524 L805 530 Z" fill="#f4e7da" opacity="0.85"/>
+  <path d="M1340 540 L1360 520 L1382 540 L1366 547 L1360 542 L1353 547 Z" fill="#f4e7da" opacity="0.85"/>
+  <text x="40" y="690" font-family="Inter, sans-serif" font-size="22" fill="#ffffff" opacity="0.5">placeholder — zamijeni fotografijom</text>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za izvor Ibra. Zamijeni fotografijom izvor-ibra.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija izvora rijeke u šumi">
+  <rect width="800" height="600" fill="#cfe0d4"/>
+  <!-- šuma u pozadini -->
+  <path d="M0 300 L120 160 L240 300 L360 170 L480 300 L600 175 L720 300 L800 240 L800 600 L0 600 Z" fill="#3f6a4a"/>
+  <g fill="#2f5238">
+    <path d="M90 320 L130 210 L170 320 Z"/>
+    <path d="M300 330 L340 215 L380 330 Z"/>
+    <path d="M560 330 L600 210 L640 330 Z"/>
+  </g>
+  <!-- stijene -->
+  <path d="M260 430 q140 -60 280 0 q-30 60 -140 60 q-110 0 -140 -60 Z" fill="#8a7256"/>
+  <!-- voda -->
+  <path d="M0 460 q200 40 400 30 q200 -10 400 30 L800 600 L0 600 Z" fill="#7fb0cc"/>
+  <g stroke="#ffffff" stroke-width="4" opacity="0.5" fill="none" stroke-linecap="round">
+    <path d="M120 520 q60 -16 120 0"/>
+    <path d="M420 540 q60 -16 120 0"/>
+  </g>
+  <text x="24" y="575" font-family="Inter, sans-serif" font-size="18" fill="#274635" opacity="0.55">placeholder · izvor Ibra</text>
+</svg>

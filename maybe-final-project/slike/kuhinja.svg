@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za karticu Kuhinja. Zamijeni fotografijom (npr. pita-sac.jpg). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija tanjira sa jelom">
+  <rect width="800" height="450" fill="#f3e2cb"/>
+  <!-- para iznad jela -->
+  <g stroke="#caa97f" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M360 120 q20 -28 0 -56 q-20 -28 0 -56"/>
+    <path d="M420 120 q20 -28 0 -56 q-20 -28 0 -56"/>
+  </g>
+  <!-- tanjir -->
+  <ellipse cx="400" cy="300" rx="210" ry="60" fill="#d9c3a3"/>
+  <ellipse cx="400" cy="290" rx="210" ry="60" fill="#efe2cd"/>
+  <!-- pita (spirala) -->
+  <g fill="none" stroke="#c98a3c" stroke-width="26" stroke-linecap="round">
+    <path d="M400 290 m-120 0 a120 34 0 1 0 240 0 a120 34 0 1 0 -240 0"/>
+    <path d="M400 290 m-72 0 a72 20 0 1 0 144 0 a72 20 0 1 0 -144 0"/>
+  </g>
+  <ellipse cx="400" cy="290" rx="14" ry="6" fill="#b24d10"/>
+  <text x="24" y="430" font-family="Inter, sans-serif" font-size="16" fill="#7a3210" opacity="0.55">placeholder · kuhinja</text>
+</svg>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     KONTAKT — kontakt.html
+     SKELET STRANICE. Header i footer ZAKLJUČANI.
+     Nema forme sa slanjem (nema backend-a). Prikazujemo korisne
+     informacije i kartu. Za pisanje koristimo običan mailto link.
+     ============================================================ -->
+<html lang="cnr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Otkrij Rožaje</title>
+  <meta name="description"
+        content="Kontakt i korisne informacije za posjetu Rožajama: turističke informacije, važni brojevi i kako nas pronaći na karti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (ZAKLJUČANO) ===== -->
+  <header class="glava">
+    <div class="glava-unutra">
+      <a href="index.html" class="logo">Otkrij <span>Rožaje</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="meni-lista" id="meni-lista">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="priroda.html">Priroda</a></li>
+          <li><a href="kuhinja.html">Kuhinja</a></li>
+          <li><a href="kultura.html">Kultura</a></li>
+          <li><a href="dogadjanja.html">Događanja</a></li>
+          <li><a href="kontakt.html" class="aktivna">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== KRAJ HEADER-a ===== -->
+
+
+  <!-- ===== HERO (mali) ===== -->
+  <section class="hero hero-mali">
+    <h1>Kontakt</h1>
+    <p>Korisne informacije za tvoju posjetu Rožajama.</p>
+  </section>
+
+
+  <!-- ===== KORISNE INFORMACIJE ===== -->
+  <section class="sekcija sekcija-bijela">
+    <div class="omot">
+      <div class="uvod-sekcije">
+        <p class="nadnaslov">Tu smo za tebe</p>
+        <h2>Korisne informacije</h2>
+        <p>Tim popunjava tačne podatke iz zvaničnih izvora (turistička
+           organizacija, opština).</p>
+      </div>
+
+      <div class="mini-mreza">
+
+        <div class="mini-karta">
+          <h3>Turističke informacije</h3>
+          <p>
+            <!-- OVDJE TIM UBACUJE: adresa i kontakt turističke organizacije -->
+            Adresa: __________<br>
+            Telefon: __________<br>
+            E-mail: __________
+          </p>
+        </div>
+
+        <div class="mini-karta">
+          <h3>Važni brojevi</h3>
+          <p>
+            Hitna pomoć: 124<br>
+            Policija: 122<br>
+            Vatrogasci: 123
+          </p>
+        </div>
+
+        <div class="mini-karta">
+          <h3>Piši nam</h3>
+          <p>
+            Imaš pitanje ili prijedlog?<br>
+            <!-- OVDJE TIM UBACUJE pravu e-mail adresu umjesto primjera -->
+            <a href="mailto:info@primjer.me">info@primjer.me</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== KARTA ===== -->
+  <section class="sekcija">
+    <div class="omot">
+      <div class="uvod-sekcije">
+        <p class="nadnaslov">Lokacija</p>
+        <h2>Pronađi nas na karti</h2>
+      </div>
+
+      <div class="slika-okvir" style="height:380px; background:linear-gradient(135deg,#7d96b0,#3f5a78);">
+        <!-- OVDJE TIM UBACUJE KARTU:
+             Na Google Maps pronađi Rožaje -> Dijeli -> "Ugradi kartu" ->
+             kopiraj <iframe> kod i zalijepi ga UMJESTO ovog teksta.
+             Primjer kako iframe izgleda (zamijeni src svojim):
+             <iframe src="..." width="100%" height="380" style="border:0;"
+                     loading="lazy"></iframe> -->
+        ovdje ide ugrađena karta (Google Maps iframe)
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER (ZAKLJUČANO) ===== -->
+  <footer class="podnozje">
+    <div class="podnozje-unutra">
+      <div>
+        <a href="index.html" class="logo">Otkrij <span>Rožaje</span></a>
+        <p>Turistički vodič kroz planinski grad na sjeveru Crne Gore.</p>
+      </div>
+      <ul class="podnozje-linkovi">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="priroda.html">Priroda</a></li>
+        <li><a href="kuhinja.html">Kuhinja</a></li>
+        <li><a href="kultura.html">Kultura</a></li>
+        <li><a href="dogadjanja.html">Događanja</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="omot podnozje-dno">
+      <p>© 2026 Otkrij Rožaje · Školski projekat · Napravljeno čistim HTML-om i CSS-om.</p>
+    </div>
+  </footer>
+
+  <script src="js/meni.js"></script>
+</body>
+</html>

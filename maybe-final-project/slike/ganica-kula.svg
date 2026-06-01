@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za Ganića kulu. Zamijeni fotografijom ganica-kula.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija kamene kule">
+  <defs>
+    <linearGradient id="g-nebo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7dccb"/>
+      <stop offset="1" stop-color="#d3c4ab"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-nebo)"/>
+  <!-- tlo -->
+  <rect x="0" y="500" width="800" height="100" fill="#9d8a6b"/>
+  <!-- kula -->
+  <rect x="300" y="150" width="200" height="350" fill="#8a7256"/>
+  <!-- krov -->
+  <path d="M280 150 L400 70 L520 150 Z" fill="#5e4b34"/>
+  <!-- redovi kamena -->
+  <g stroke="#6f5a42" stroke-width="3" opacity="0.55">
+    <line x1="300" y1="200" x2="500" y2="200"/>
+    <line x1="300" y1="250" x2="500" y2="250"/>
+    <line x1="300" y1="300" x2="500" y2="300"/>
+    <line x1="300" y1="350" x2="500" y2="350"/>
+    <line x1="300" y1="400" x2="500" y2="400"/>
+    <line x1="400" y1="150" x2="400" y2="500" opacity="0.4"/>
+  </g>
+  <!-- puškarnice i vrata -->
+  <g fill="#3f3326">
+    <rect x="340" y="210" width="22" height="44"/>
+    <rect x="438" y="210" width="22" height="44"/>
+    <rect x="340" y="300" width="22" height="44"/>
+    <rect x="438" y="300" width="22" height="44"/>
+    <path d="M360 500 L360 420 q40 -30 80 0 L440 500 Z"/>
+  </g>
+  <text x="24" y="575" font-family="Inter, sans-serif" font-size="18" fill="#4a3a28" opacity="0.55">placeholder · Ganića kula</text>
+</svg>

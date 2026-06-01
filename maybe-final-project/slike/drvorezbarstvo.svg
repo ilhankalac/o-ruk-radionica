@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za drvorezbarstvo. Zamijeni fotografijom drvorezbarstvo.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija rezbarene drvene šare">
+  <rect width="800" height="600" fill="#a9763f"/>
+  <!-- tekstura drveta -->
+  <g stroke="#946233" stroke-width="6" opacity="0.5" fill="none">
+    <path d="M0 60 q400 -20 800 0"/>
+    <path d="M0 540 q400 20 800 0"/>
+  </g>
+  <!-- rezbareni okvir -->
+  <rect x="60" y="60" width="680" height="480" fill="none" stroke="#6f4a23" stroke-width="10"/>
+  <!-- rozeta u sredini -->
+  <g transform="translate(400 300)" fill="none" stroke="#5e3e1d" stroke-width="8">
+    <circle r="120"/>
+    <circle r="70"/>
+    <g>
+      <path d="M0 -120 q26 -50 0 -90 q-26 40 0 90"/>
+      <path d="M0 120 q26 50 0 90 q-26 -40 0 -90"/>
+      <path d="M-120 0 q-50 26 -90 0 q40 -26 90 0"/>
+      <path d="M120 0 q50 26 90 0 q-40 -26 90 0"/>
+    </g>
+  </g>
+  <g transform="translate(400 300) rotate(45)" fill="none" stroke="#5e3e1d" stroke-width="6" opacity="0.8">
+    <path d="M0 -120 q18 -40 0 -70 q-18 30 0 70"/>
+    <path d="M0 120 q18 40 0 70 q-18 -30 0 -70"/>
+    <path d="M-120 0 q-40 18 -70 0 q30 -18 70 0"/>
+    <path d="M120 0 q40 18 70 0 q-30 -18 70 0"/>
+  </g>
+  <text x="24" y="575" font-family="Inter, sans-serif" font-size="18" fill="#3f2912" opacity="0.6">placeholder · drvorezbarstvo</text>
+</svg>

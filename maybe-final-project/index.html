@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     POČETNA STRANICA — index.html
+     Ovo je JEDINA potpuno popunjena stranica. Služi kao primjer
+     timovima kako sve treba da izgleda na kraju.
+     HEADER i FOOTER su isti na svim stranicama (zaključani skelet).
+     ============================================================ -->
+<html lang="cnr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ovaj red čini da sajt lijepo izgleda na telefonu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Otkrij Rožaje — turistički vodič kroz planinski grad</title>
+  <!-- Opis za Google i kad se link dijeli na društvenim mrežama -->
+  <meta name="description"
+        content="Otkrij Rožaje: planinski grad na sjeveru Crne Gore. Priroda i planine, rožajska kuhinja, kultura i nasljeđe, događanja i kako doći.">
+
+  <!-- Učitavanje dva fonta sa Google Fonts: Playfair (naslovi) + Inter (tekst) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Naš zajednički stil -->
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (ZAKLJUČANO — isto na svim stranicama) ===== -->
+  <header class="glava">
+    <div class="glava-unutra">
+      <!-- Tekstualni logo lijevo -->
+      <a href="index.html" class="logo">Otkrij <span>Rožaje</span></a>
+
+      <!-- Hamburger dugme (vidi se samo na telefonu) -->
+      <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Glavna navigacija. Klasa "aktivna" označava trenutnu stranicu. -->
+      <nav>
+        <ul class="meni-lista" id="meni-lista">
+          <li><a href="index.html" class="aktivna">Početna</a></li>
+          <li><a href="priroda.html">Priroda</a></li>
+          <li><a href="kuhinja.html">Kuhinja</a></li>
+          <li><a href="kultura.html">Kultura</a></li>
+          <li><a href="dogadjanja.html">Događanja</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== KRAJ HEADER-a ===== -->
+
+
+  <!-- ===== HERO (velika uvodna sekcija) ===== -->
+  <section class="hero hero-pocetna">
+    <h1>Otkrij Rožaje</h1>
+    <p>Planinski grad na sjeveru Crne Gore — gdje izvire Ibar, gdje miriše pita
+       ispod sača, a Hajla čuva grad sa svojih 2.403 metra.</p>
+    <a href="priroda.html" class="dugme">Počni istraživanje</a>
+
+    <!-- PRIVREMENA slika vrha Hajla (zaštićena autorskim pravima!).
+         Smije stajati samo kao placeholder dok se ne nađe vlastita ili
+         propisno licencirana fotografija. Tada izmijeni/ukloni ovaj red. -->
+    <p class="foto-kredit">
+      Foto: Theresa Schmalenbach /
+      <a href="https://www.outdooractive.com/">Outdooractive</a>
+    </p>
+  </section>
+
+
+  <!-- ===== KRATAK UVOD ===== -->
+  <section class="sekcija sekcija-bijela">
+    <div class="omot uvod-sekcije">
+      <p class="nadnaslov">Dobro došli</p>
+      <h2>Grad između planina i rijeke</h2>
+      <p>Rožaje leže u dolini rijeke Ibar, okružene vijencima Hajle, Turjaka i
+         Žljeba. Ovdje se susreću planinska priroda, bogata sandžačka kuhinja i
+         vjekovno nasljeđe drvorezbarstva. Ovaj vodič te vodi kroz sve što grad
+         nudi — odaberi gdje želiš da kreneš.</p>
+    </div>
+
+    <!-- ===== KARTICE — 5 ulaza u ostatak sajta (grid 3 u redu) ===== -->
+    <div class="omot">
+      <div class="kartice">
+
+        <!-- Kartica 1 -->
+        <a href="priroda.html" class="kartica">
+          <img class="kartica-slika" src="slike/priroda.svg" alt="Planine oko Rožaja">
+          <div class="kartica-tekst">
+            <h3>Priroda i planine</h3>
+            <p>Vrh Hajla, izvor Ibra, planinske staze i čist vazduh na 1.000 m
+               nadmorske visine.</p>
+            <span class="vise">Pogledaj prirodu →</span>
+          </div>
+        </a>
+
+        <!-- Kartica 2 -->
+        <a href="kuhinja.html" class="kartica">
+          <img class="kartica-slika" src="slike/kuhinja.svg" alt="Tradicionalno rožajsko jelo">
+          <div class="kartica-tekst">
+            <h3>Rožajska kuhinja</h3>
+            <p>Pita ispod sača, mantije, cicvara i domaći sir — i gdje sve to
+               možeš probati.</p>
+            <span class="vise">Šta i gdje jesti →</span>
+          </div>
+        </a>
+
+        <!-- Kartica 3 -->
+        <a href="kultura.html" class="kartica">
+          <img class="kartica-slika" src="slike/kultura.svg" alt="Ganića kula">
+          <div class="kartica-tekst">
+            <h3>Kultura i nasljeđe</h3>
+            <p>Ganića kula, tradicija drvorezbarstva, džamije i običaji koji
+               traju vjekovima.</p>
+            <span class="vise">Upoznaj nasljeđe →</span>
+          </div>
+        </a>
+
+        <!-- Kartica 4 -->
+        <a href="dogadjanja.html" class="kartica">
+          <img class="kartica-slika" src="slike/dogadjanja.svg" alt="Manifestacije u Rožajama">
+          <div class="kartica-tekst">
+            <h3>Događanja</h3>
+            <p>Manifestacije kroz godinu, zimske radosti na snijegu i praktične
+               informacije kako doći.</p>
+            <span class="vise">Vidi šta se dešava →</span>
+          </div>
+        </a>
+
+        <!-- Kartica 5 -->
+        <a href="kontakt.html" class="kartica">
+          <img class="kartica-slika" src="slike/kontakt.svg" alt="Karta sa lokacijom Rožaja">
+          <div class="kartica-tekst">
+            <h3>Kontakt i info</h3>
+            <p>Korisni brojevi, turističke informacije i kako nas pronaći na
+               karti.</p>
+            <span class="vise">Stupi u kontakt →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== ZAŠTO ROŽAJE (tri kratka razloga) ===== -->
+  <section class="sekcija">
+    <div class="omot">
+      <div class="uvod-sekcije">
+        <p class="nadnaslov">Zašto baš ovdje</p>
+        <h2>Tri razloga da posjetiš Rožaje</h2>
+      </div>
+      <div class="mini-mreza">
+        <div class="mini-karta">
+          <h3>Netaknuta priroda</h3>
+          <p>Planine preko 2.000 m, gusta četinarska šuma i izvori pitke vode
+             nadomak grada.</p>
+        </div>
+        <div class="mini-karta">
+          <h3>Topla gostoljubivost</h3>
+          <p>Domaćinska kuhinja i ljudi koji goste dočekuju kao prijatelje —
+             stara sandžačka tradicija.</p>
+        </div>
+        <div class="mini-karta">
+          <h3>Živo nasljeđe</h3>
+          <p>Drvorezbarstvo, sevdah i stari zanati koji se i danas prenose s
+             koljena na koljeno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER (ZAKLJUČANO — isto na svim stranicama) ===== -->
+  <footer class="podnozje">
+    <div class="podnozje-unutra">
+      <div>
+        <a href="index.html" class="logo">Otkrij <span>Rožaje</span></a>
+        <p>Turistički vodič kroz planinski grad na sjeveru Crne Gore.</p>
+      </div>
+      <ul class="podnozje-linkovi">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="priroda.html">Priroda</a></li>
+        <li><a href="kuhinja.html">Kuhinja</a></li>
+        <li><a href="kultura.html">Kultura</a></li>
+        <li><a href="dogadjanja.html">Događanja</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="omot podnozje-dno">
+      <!-- Ime sajta i godina -->
+      <p>© 2026 Otkrij Rožaje · Školski projekat · Napravljeno čistim HTML-om i CSS-om.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript za hamburger meni ide na kraju (da se HTML prvo učita) -->
+  <script src="js/meni.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+/* ============================================================
+   OTKRIJ ROŽAJE — zajednički stil za sve stranice
+   ------------------------------------------------------------
+   Ovaj fajl je "srce" izgleda sajta. Jedan fajl vrijedi za SVE
+   stranice (index.html, priroda.html, kuhinja.html ...).
+
+   KAKO JE PODIJELJEN (lako se snaći):
+     1. Promjenljive boja i fontova  (na vrhu, mijenjaš ovdje)
+     2. Osnovna podešavanja          (reset, body, tipografija)
+     3. Header i navigacija          (gornja traka — ZAKLJUČANO)
+     4. Hamburger meni za mobilni
+     5. Hero sekcija
+     6. Kartice (grid na početnoj)
+     7. Sadržaj stranica (sekcije, naslovi, liste)
+     8. Footer                        (ZAKLJUČANO)
+     9. Responsivnost (telefon/tablet)
+    10. Štampa (da se vodič može odštampati)
+
+   SAVJET ZA ĐAKE: ako želiš drugu boju cijelog sajta, promijeni
+   SAMO vrijednost --zelena ispod i sve se mijenja u trenu.
+   ============================================================ */
+
+
+/* 1. PROMJENLJIVE  -------------------------------------------
+   "Promjenljiva" je kao kutija u koju upišeš vrijednost jednom,
+   pa je koristiš svuda. Ako promijeniš kutiju — mijenja se svuda. */
+:root {
+  /* Boje — izvučene iz glavne fotografije Hajle (šuma, livada, nebo) */
+  --zelena:       #2e5a37;  /* glavna: duboka borova zelena (šuma) */
+  --zelena-tamna: #1f3f27;  /* tamnija zelena za hover i footer */
+  --zlatna:       #b08a1f;  /* zlato planinske livade (akcent, detalji) */
+  --nebo:         #2f86c7;  /* plava neba (sporedni akcent) */
+  --tekst:        #1f261b;  /* skoro crna sa zelenim tonom — glavni tekst */
+  --siva:         #5f6b5a;  /* prigušena zeleno-siva za opise */
+  --meka:         #f3f6ef;  /* "skoro bijela" sa blagim zelenim tonom */
+  --bijela:       #ffffff;
+  --linija:       #e1e7da;  /* tanke linije i okviri */
+
+  /* Razmaci i mjere — da sve "diše" jednako */
+  --sirina:      1100px;   /* najveća širina sadržaja na ekranu */
+  --razmak:      24px;     /* osnovni razmak */
+  --radijus:     14px;     /* zaobljenje uglova */
+  --sjenka:      0 10px 30px rgba(31, 38, 27, 0.10);
+
+  /* Fontovi (učitani preko Google Fonts u <head> svake stranice) */
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:  "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+
+/* 2. OSNOVNA PODEŠAVANJA  ----------------------------------- */
+
+/* Mali "reset": ukloni podrazumijevane razmake i uračunaj
+   okvir u širinu elementa — tako je raspored predvidiv. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* glatko klizanje kad klikneš na link unutar strane */
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--tekst);
+  background: var(--meka);
+  line-height: 1.65;       /* prozračan razmak između redova */
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Naslovi koriste elegantan serif font */
+h1, h2, h3 {
+  font-family: var(--serif);
+  line-height: 1.15;
+  color: var(--tekst);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 1.2rem + 2vw, 2.6rem); /* raste sa ekranom */
+  margin-bottom: 0.4em;
+}
+
+h3 { font-size: 1.4rem; margin-bottom: 0.3em; }
+
+p { margin-bottom: 1em; }
+
+a { color: var(--zelena); }
+
+/* Slike nikad ne smiju "iscuriti" izvan svog okvira */
+img { max-width: 100%; display: block; }
+
+/* "Omotač" koji drži sadržaj centriran i ne preširok */
+.omot {
+  width: 100%;
+  max-width: var(--sirina);
+  margin: 0 auto;
+  padding: 0 var(--razmak);
+}
+
+/* Dugme — koristimo ga za pozive na akciju */
+.dugme {
+  display: inline-block;
+  background: var(--zelena);
+  color: var(--bijela);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 999px;        /* potpuno zaobljeno */
+  transition: background 0.2s, transform 0.2s;
+}
+.dugme:hover {
+  background: var(--zelena-tamna);
+  transform: translateY(-2px);  /* lagano "podigne" dugme */
+}
+
+
+/* 3. HEADER I NAVIGACIJA (ZAKLJUČANI SKELET)  ---------------
+   Ovaj dio je ISTI na svim stranicama. Đaci ga NE diraju. */
+.glava {
+  background: var(--zelena);
+  color: var(--bijela);
+  position: sticky;   /* ostaje zalijepljen na vrhu kad skrolaš */
+  top: 0;
+  z-index: 50;        /* uvijek iznad ostalog sadržaja */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.glava-unutra {
+  max-width: var(--sirina);
+  margin: 0 auto;
+  padding: 14px var(--razmak);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tekstualni logo (za sad bez slike) */
+.logo {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bijela);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.logo span { color: #d7e8b8; } /* "Rožaje" u svijetloj boji livade */
+
+/* Red navigacionih linkova */
+.meni-lista {
+  list-style: none;     /* bez tačkica ispred */
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.meni-lista a {
+  color: var(--bijela);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+.meni-lista a:hover { background: rgba(255, 255, 255, 0.18); }
+
+/* Trenutna stranica je istaknuta (klasa "aktivna") */
+.meni-lista a.aktivna {
+  background: rgba(255, 255, 255, 0.22);
+  font-weight: 600;
+}
+
+
+/* 4. HAMBURGER DUGME (vidi se samo na telefonu)  ------------ */
+.hamburger {
+  display: none;                /* na desktopu sakriveno */
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+}
+/* Tri crtice pravimo od tri <span> unutar dugmeta */
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--bijela);
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+
+/* 5. HERO SEKCIJA  ------------------------------------------ */
+.hero {
+  /* Tri sloja pozadine, odozgo nadole:
+       1. tamni preliv (da bijeli tekst bude čitljiv preko slike)
+       2. slika panorame (placeholder — zamijeni svojom .jpg fotkom)
+       3. topli gradijent kao rezerva ako se slika ne učita
+     KASNIJE: u sloju 2 zamijeni rozaje-panorama.svg svojom fotografijom. */
+  background:
+    linear-gradient(180deg, rgba(20,28,18,0.25), rgba(20,28,18,0.65)),
+    url("../slike/rozaje-panorama.svg") center / cover no-repeat,
+    linear-gradient(135deg, #3a6b43, #1f3f27 60%, #152a18);
+  color: var(--bijela);
+  text-align: center;
+  padding: clamp(70px, 12vw, 150px) var(--razmak);
+}
+.hero h1 {
+  color: var(--bijela);
+  font-size: clamp(2.4rem, 1.5rem + 4vw, 4.5rem);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  margin-bottom: 0.2em;
+}
+.hero p {
+  font-size: clamp(1.05rem, 0.9rem + 1vw, 1.4rem);
+  max-width: 640px;
+  margin: 0 auto 1.6em;
+  opacity: 0.95;
+}
+
+/* Poseban cover SAMO za početnu stranicu: prava fotografija rijeke
+   koja teče kroz planine. Dodaj klasu "hero-pocetna" pored "hero".
+   KASNIJE: zamijeni rozaje-hero.jpg svojom fotografijom Rožaja. */
+.hero-pocetna {
+  position: relative;        /* da kredit za fotografiju može u ugao */
+  background:
+    linear-gradient(180deg, rgba(20,28,18,0.28), rgba(20,28,18,0.55)),
+    url("../slike/rozaje-hero.jpg") center / cover no-repeat,
+    linear-gradient(135deg, #3a6b43, #1f3f27 60%, #152a18);
+}
+
+/* Sitan kredit autoru fotografije (licenca to zahtijeva).
+   Kad ubaciš svoju fotku, ovdje upiši svoje ime ili je ukloni. */
+.foto-kredit {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  margin: 0;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.foto-kredit a { color: rgba(255, 255, 255, 0.85); }
+
+/* Manji "hero" za unutrašnje stranice (bez ogromne visine) */
+.hero-mali {
+  padding: clamp(50px, 8vw, 90px) var(--razmak);
+}
+.hero-mali h1 { font-size: clamp(2rem, 1.3rem + 3vw, 3.4rem); }
+
+
+/* 6. KARTICE (grid na početnoj)  --------------------------- */
+.kartice {
+  display: grid;
+  /* 3 u redu na desktopu; "auto-fit" sam prelama na manji ekran */
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--razmak);
+}
+.kartica {
+  background: var(--bijela);
+  border-radius: var(--radijus);
+  overflow: hidden;            /* slika ne viri preko zaobljenih uglova */
+  box-shadow: var(--sjenka);
+  text-decoration: none;
+  color: var(--tekst);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.kartica:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(43, 38, 34, 0.14);
+}
+/* Slika kartice. Ovo je <img> koji popuni gornji dio kartice.
+   object-fit: cover znači da slika pokrije okvir bez izobličenja
+   (višak se "odsiječe"). Gradijent ispod je rezerva. */
+.kartica-slika {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #5d8a63, #2e5a37);
+}
+.kartica-tekst { padding: 20px 22px 26px; }
+.kartica-tekst h3 { margin-bottom: 0.2em; }
+.kartica-tekst p { color: var(--siva); margin-bottom: 0.8em; }
+.kartica-tekst .vise { font-weight: 600; color: var(--zelena); }
+
+
+/* 7. SADRŽAJ STRANICA  ------------------------------------- */
+.sekcija { padding: clamp(48px, 8vw, 90px) 0; }
+
+/* Naizmjenična pozadina da se sekcije razlikuju */
+.sekcija-bijela { background: var(--bijela); }
+
+/* Uvodni red iznad naslova sekcije (mali, zlatni, raspoređen) */
+.nadnaslov {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--zlatna);
+  margin-bottom: 8px;
+}
+
+/* Centriran uvod sekcije */
+.uvod-sekcije {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.uvod-sekcije p { color: var(--siva); font-size: 1.1rem; }
+
+/* Dvije kolone: tekst + slika jedno do drugog */
+.dvije-kolone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.dvije-kolone .slika-okvir {
+  height: 360px;
+  border-radius: var(--radijus);
+  background: linear-gradient(135deg, #8fae8a, #4f7a52);
+  box-shadow: var(--sjenka);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+}
+
+/* Velika fotografija (<img>) u sekciji sa dvije kolone.
+   Isti izgled kao .slika-okvir, ali za pravu sliku. */
+.foto {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: var(--radijus);
+  box-shadow: var(--sjenka);
+  display: block;
+}
+
+/* Lijepe liste sa kvačicom umjesto tačke */
+.lista-cek { list-style: none; }
+.lista-cek li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+.lista-cek li::before {
+  content: "›";
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  color: var(--zelena);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* "Info kutija" — istaknut savjet ili podatak */
+.info-kutija {
+  background: var(--meka);
+  border-left: 4px solid var(--zlatna);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+.info-kutija strong { color: var(--zelena-tamna); }
+
+/* Mreža manjih info-kartica (npr. jela, planine, kontakti) */
+.mini-mreza {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.mini-karta {
+  background: var(--bijela);
+  border: 1px solid var(--linija);
+  border-radius: var(--radijus);
+  padding: 24px;
+}
+.mini-karta h3 { color: var(--zelena-tamna); }
+.mini-karta p { color: var(--siva); margin-bottom: 0; }
+
+
+/* 8. FOOTER (ZAKLJUČANI SKELET)  --------------------------- */
+.podnozje {
+  background: var(--zelena-tamna);
+  color: #e7efdd;
+  padding: 50px var(--razmak) 30px;
+  margin-top: 60px;
+}
+.podnozje-unutra {
+  max-width: var(--sirina);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.podnozje .logo { font-size: 1.3rem; margin-bottom: 8px; display: inline-block; }
+.podnozje a { color: #d7e8b8; }
+.podnozje-linkovi { list-style: none; display: flex; flex-wrap: wrap; gap: 16px; }
+.podnozje-linkovi a { text-decoration: none; }
+.podnozje-linkovi a:hover { text-decoration: underline; }
+.podnozje-dno {
+  max-width: var(--sirina);
+  margin: 30px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+
+/* 9. RESPONSIVNOST  ----------------------------------------
+   Na ekranima užim od 820px (tableti i telefoni) mijenjamo
+   raspored: meni postaje hamburger, kolone se slažu jedna
+   ispod druge. */
+@media (max-width: 820px) {
+
+  /* Prikaži hamburger, sakrij obični red linkova */
+  .hamburger { display: block; }
+
+  .meni-lista {
+    /* Meni se otvara kao vertikalna lista ispod headera */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--zelena-tamna);
+    padding: 8px 0;
+  }
+  /* Klasa "otvoren" dodaje JavaScript kad klikneš hamburger */
+  .meni-lista.otvoren { display: flex; }
+  .meni-lista a {
+    border-radius: 0;
+    padding: 14px var(--razmak);
+    width: 100%;
+  }
+
+  /* Sve grid-rasporede svodimo na jednu kolonu */
+  .kartice,
+  .mini-mreza { grid-template-columns: 1fr; }
+
+  .dvije-kolone { grid-template-columns: 1fr; gap: 28px; }
+  .dvije-kolone .slika-okvir { height: 240px; }
+  .foto { height: 240px; }
+}
+
+/* Na srednjim ekranima (tablet) kartice idu 2 u red */
+@media (min-width: 821px) and (max-width: 1000px) {
+  .kartice { grid-template-columns: repeat(2, 1fr); }
+  .mini-mreza { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* 10. ŠTAMPA  ----------------------------------------------
+   Ako neko odštampa stranicu (ili "Sačuvaj kao PDF"), sakrij
+   navigaciju i sjenke da vodič izgleda kao čista brošura. */
+@media print {
+  .glava, .hamburger, .podnozje-linkovi { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  .hero { color: #000; background: none; padding: 20px 0; }
+  .hero h1 { color: #000; text-shadow: none; }
+  .kartica, .mini-karta { box-shadow: none; border: 1px solid #ccc; }
+}

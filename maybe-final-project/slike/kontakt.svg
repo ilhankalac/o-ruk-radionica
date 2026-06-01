@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER za karticu Kontakt. Zamijeni fotografijom/kartom. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracija karte sa oznakom lokacije">
+  <rect width="800" height="450" fill="#dfe6df"/>
+  <!-- putevi -->
+  <g stroke="#bcc7bd" stroke-width="14" fill="none" stroke-linecap="round">
+    <path d="M-20 150 L260 200 L520 130 L840 220"/>
+    <path d="M120 470 L260 200 L360 60"/>
+    <path d="M520 130 L600 470"/>
+  </g>
+  <!-- rijeka -->
+  <path d="M-20 320 q200 -40 360 20 q200 70 480 -10" stroke="#7fa9c4" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <!-- oznaka lokacije (pin) -->
+  <path d="M400 120 a70 70 0 0 1 70 70 c0 55 -70 130 -70 130 c0 0 -70 -75 -70 -130 a70 70 0 0 1 70 -70 Z" fill="#b24d10"/>
+  <circle cx="400" cy="190" r="28" fill="#ffffff"/>
+  <text x="24" y="430" font-family="Inter, sans-serif" font-size="16" fill="#3f5a3f" opacity="0.55">placeholder · kontakt</text>
+</svg>
