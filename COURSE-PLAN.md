@@ -82,7 +82,7 @@ StudentName/
 | R2 | `R2-html-structure` | header/main/section/footer/ul/a **+ 5 stranica + nav** | Klikaš kroz svoj "pravi sajt" | ✅ 23. maj |
 | R3 | `R3-css-styling` | Boje + Google Fonts + box model | "Liči na pravi sajt" | ✅ 24. maj |
 | R4 | `R4-css-layout` | Flexbox kartice (4 propertyja) | "Izgleda kao Airbnb" | ✅ 31. maj |
-| R5 | _(nije još)_ | Git deo 1 — commit/push/pull, lični GitHub | "Sajt je u cloud-u" | slijedi |
+| R5 | `R5-git-cloud` | Git deo 1 — **terminal** (clone/add/commit/push) + `gh auth login`, lični GitHub | "Sajt je u cloud-u" | ✅ 2. jun |
 | R6 | _(nije još)_ | Git deo 2 — branch + Pull Request, timski repo | "Moj PR je mergean" | slijedi |
 | R7 | _(nije još)_ | AI — etika, halucinacije, sadržaj | "AI nije magija" | slijedi |
 | R8 | _(nije još)_ | Timski projekat — start (JS utkano) | "Mi smo tim" | slijedi |
@@ -126,7 +126,7 @@ Svaki tim treba da može:
 - ✅ Objasniti strukturu foldera
 - ✅ Uživo izmijeniti HTML/CSS (potvrda razumijevanja)
 - ✅ Razdvojiti šta je AI napisao a šta oni
-- ✅ Objasniti GitHub Desktop (commit/push/pull) + šta je branch i Pull Request
+- ✅ Objasniti Git iz terminala (clone/add/commit/push) + šta je branch i Pull Request
 - ✅ Objasniti **JEDAN** JS feature svog sajta
 
 **Bonus za svakog učenika:** lični GitHub profil sa ličnim sajtom + beleškama iz svake radionice.
