@@ -1,7 +1,7 @@
 # Beleške — R6: Branch + Pull Request
 
 **Ime:** ___________________  **Datum:** ___________
-**Zajednički repo:** https://github.com/________/rozaje-tim-demo
+**Zajednički repo:** https://github.com/ilhankalac/radionica-demo
 **Moj branch:** ___________________
 **Link mog Pull Request-a:** ___________________
 

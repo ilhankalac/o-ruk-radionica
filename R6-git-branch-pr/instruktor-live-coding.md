@@ -44,8 +44,8 @@ Popuni rječnik tabelu na tabli. Tek kad svi klimaju glavom — prelazimo na tas
 ## KORAK 2 — Svi se nakače na moj repo (clone)
 > 🗣️ *"Poslao sam link u grupu. Otvorite ga. Vidite da imate dugme da pišete — to znači da ste collaborator, ovo je naš zajednički repo."*
 ```bash
-git clone https://github.com/TVOJ-NALOG/rozaje-tim-demo.git
-cd rozaje-tim-demo
+git clone https://github.com/ilhankalac/radionica-demo.git
+cd radionica-demo
 ```
 > 🗣️ *"Svi vi sad imate ISTI repo na računaru. Ono što jedan pošalje, drugi može da povuče."*
 

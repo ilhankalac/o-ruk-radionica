@@ -22,7 +22,7 @@ Ne gradimo novi sajt. Učimo **timski Git tok** na jednom **demo repou instrukto
 ---
 
 ## Pripremi prije časa (KRITIČNO)
-- [ ] **Demo repo spreman** — npr. `rozaje-tim-demo`, **Public**, sa 2–3 stranice + README. Mora imati mjesto gdje svako doda sitnu izmjenu bez konflikta — npr. stranica `ucesnici.html` sa praznom listom (svako doda svoj `<li>`), ili sekcija kartica.
+- [x] **Demo repo spreman** — `radionica-demo` (`https://github.com/ilhankalac/radionica-demo`), **Public**, sa `index.html`, `ucesnici.html` (lista gdje svako doda svoj `<li>`), `style.css`, `README.md`. Fajlovi su u `radionica-demo/` folderu — pushuj ih na repo prije časa.
 - [ ] **Svi učenici dodati kao collaboratori UNAPRIJED** — Settings → Collaborators → dodaj svaki GitHub username. **Traži usernamove dan ranije** (i da prihvate pozivnicu prije časa — stiže im na mejl/u Notifications). Plan B: dodaješ uživo dok rade uvod.
 - [ ] **Provjera da `push` i dalje radi kod svih** — `gh auth status` mora reći "Logged in". Ako je neko od R5 promijenio računar — ponovi `gh auth login`.
 - [ ] **Crtež na tabli** (ostaje cijeli čas):
@@ -83,8 +83,8 @@ Niko ne dira tastaturu. Tabla + analogije.
 - Svako otvori demo repo na GitHubu (pošalji link u grupu): potvrde da vide poruku da su **collaborator** (imaju dugme da pišu, ne samo "Fork").
 - **Code → HTTPS → kopiraj URL**, pa u radnom folderu:
   ```bash
-  git clone https://github.com/TVOJ-NALOG/rozaje-tim-demo.git
-  cd rozaje-tim-demo
+  git clone https://github.com/ilhankalac/radionica-demo.git
+  cd radionica-demo
   ```
 - Otvore folder u VS Code. Poenta: *"svi vi imate ISTI repo na računaru. Ono što jedan pošalje, drugi mogu da povuku."*
 

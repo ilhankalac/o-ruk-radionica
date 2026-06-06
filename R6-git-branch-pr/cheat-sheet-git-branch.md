@@ -8,8 +8,8 @@
 
 ```bash
 # 1) Skini zajednički repo (samo prvi put)
-git clone https://github.com/INSTRUKTOR/rozaje-tim-demo.git
-cd rozaje-tim-demo
+git clone https://github.com/ilhankalac/radionica-demo.git
+cd radionica-demo
 
 # 2) Povuci najnovije PRIJE nego počneš da radiš
 git pull
