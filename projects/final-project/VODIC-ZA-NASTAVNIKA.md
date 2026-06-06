@@ -120,7 +120,7 @@ turistička organizacija ili opština mogu realno koristiti. Zato:
 ## Tehnički podsjetnik
 
 ```
-maybe-final-project/
+final-project/
 ├── index.html          (POČETNA — gotova, primjer)
 ├── priroda.html        (skelet)
 ├── kuhinja.html        (skelet)
@@ -134,5 +134,5 @@ maybe-final-project/
 ```
 
 **Objava na internetu:** idi na <https://app.netlify.com/drop> i prevuci
-**cijeli folder** `maybe-final-project` u prozor. Dobićeš javni link za par
+**cijeli folder** `final-project` u prozor. Dobićeš javni link za par
 sekundi. (Ako želiš svoju adresu/domen, to se podešava kasnije u Netlify-ju.)

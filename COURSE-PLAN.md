@@ -37,7 +37,7 @@ Timovi uzimaju **najbolje ideje iz ličnih sajtova** i grade timski "Visit Roža
 
 ---
 
-## Reference sajt (`reference-site/`)
+## Reference sajt (`projects/reference-site/`)
 
 Moderan tourism sajt koji **pokazuješ na R1** kao demo: *"Za 11 radionica vi gradite ovakav sajt."*
 
@@ -107,7 +107,7 @@ StudentName/
 
 - [ ] VS Code instaliran kod svih (uputstvo poslano dan ranije)
 - [ ] Live Server extension link spreman (autor: Ritwick Dey)
-- [ ] **Reference sajt otvoren** u tabu (`reference-site/index.html`)
+- [ ] **Reference sajt otvoren** u tabu (`projects/reference-site/index.html`)
 - [ ] 3-4 inspirativna mala tourism sajta otvorena u tabovima
 - [ ] USB sa offline VS Code installer-om
 - [ ] Folder "resursi" sa 30+ slika Rožaja na USB-u

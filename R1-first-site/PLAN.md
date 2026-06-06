@@ -10,7 +10,7 @@ Jednu HTML stranicu sa naslovom, slikom Rožaja i 3 pasusa "zašto volim svoj gr
 ## Pripremi prije časa
 - [ ] VS Code instaliran kod svih (uputstvo poslano dan ranije)
 - [ ] **Live Server** extension link (autor: Ritwick Dey)
-- [ ] **Reference sajt** otvoren u tabu (`reference-site/index.html` preko Live Server)
+- [ ] **Reference sajt** otvoren u tabu (`projects/reference-site/index.html` preko Live Server)
 - [ ] 2-3 inspirativna mala tourism sajta otvorena u tabovima
 - [ ] USB sa offline VS Code installer-om (rezerva)
 - [ ] Dogovoreni timovi (4 tima po 3-4 člana)
