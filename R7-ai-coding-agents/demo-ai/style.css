@@ -1,0 +1,76 @@
+:root {
+  --boja-pozadine: #f5f6fa;
+  --boja-teksta: #2d2d3a;
+  --boja-naglasak: #5b4bff;
+  --boja-zelena: #16a34a;
+  --boja-prigusena: #8a8a99;
+  --sirina: 700px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--boja-teksta);
+  background-color: var(--boja-pozadine);
+}
+
+h1, h2, p, img, ul, footer {
+  max-width: var(--sirina);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--boja-naglasak);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0 auto 1.25rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+li::marker {
+  color: var(--boja-zelena);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e0e0e8;
+  font-size: 0.9rem;
+  color: var(--boja-prigusena);
+}

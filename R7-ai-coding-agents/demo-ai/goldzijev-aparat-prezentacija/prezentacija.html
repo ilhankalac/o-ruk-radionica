@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Goldžijev aparat</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2937;
+  }
+
+  .slide {
+    width: 297mm;
+    height: 209mm;
+    padding: 18mm 22mm;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide:last-child { page-break-after: auto; }
+
+  /* Naslovna */
+  .cover {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #6d28d9 0%, #2563eb 100%);
+    color: #fff;
+  }
+  .cover h1 { font-size: 54px; font-weight: 800; letter-spacing: -1px; margin-bottom: 14px; }
+  .cover .sub { font-size: 24px; font-weight: 400; opacity: 0.92; }
+  .cover .tag {
+    margin-top: 40px; font-size: 16px; letter-spacing: 2px;
+    text-transform: uppercase; opacity: 0.8;
+  }
+  .cover .emoji { font-size: 70px; margin-bottom: 20px; }
+
+  /* Sadržajni slajdovi */
+  .slide h2 {
+    font-size: 34px;
+    color: #6d28d9;
+    border-bottom: 4px solid #6d28d9;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+  }
+  .slide ul { list-style: none; }
+  .slide li {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding-left: 36px;
+    position: relative;
+  }
+  .slide li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 800;
+  }
+  .slide li b { color: #1f2937; }
+
+  .highlight {
+    background: #f3f0ff;
+    border-left: 5px solid #6d28d9;
+    padding: 16px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .two-col { display: flex; gap: 30px; }
+  .two-col > div { flex: 1; }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+  .card h3 { font-size: 22px; color: #2563eb; margin-bottom: 12px; }
+  .card p { font-size: 18px; line-height: 1.5; }
+
+  .slidenum {
+    position: absolute;
+    bottom: 12mm; right: 22mm;
+    font-size: 14px; color: #94a3b8;
+  }
+  .footer-note {
+    position: absolute;
+    bottom: 12mm; left: 22mm;
+    font-size: 14px; color: #94a3b8;
+  }
+</style>
+</head>
+<body>
+
+<!-- 1. NASLOVNA -->
+<section class="slide cover">
+  <div class="emoji">🧬</div>
+  <h1>Goldžijev aparat</h1>
+  <div class="sub">Ćelijska organela za doradu i pakovanje</div>
+  <div class="tag">Biologija &middot; Srednja škola</div>
+</section>
+
+<!-- 2. ŠTA JE -->
+<section class="slide">
+  <h2>Šta je Goldžijev aparat?</h2>
+  <ul>
+    <li><b>Membranska organela</b> prisutna u skoro svim eukariotskim ćelijama (biljnim i životinjskim).</li>
+    <li>Izgleda kao <b>skup spljoštenih, savijenih membranskih kesica</b> poslaganih jedna iznad druge.</li>
+    <li>Otkrio ga je italijanski naučnik <b>Camillo Golgi 1898. godine</b> — po njemu je i dobio ime.</li>
+  </ul>
+  <div class="highlight">
+    Glavna uloga: <b>dorada, sortiranje i pakovanje</b> proteina i masti koje ćelija proizvodi.
+  </div>
+  <div class="slidenum">2</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+<!-- 3. GRAĐA -->
+<section class="slide">
+  <h2>Građa</h2>
+  <ul>
+    <li><b>Cisterne</b> — spljoštene membranske kesice poslagane u svežanj (dictiosom).</li>
+    <li><b>Cis strana</b> (prijemna) — okrenuta ka endoplazmatičnom retikulumu; tu stižu materije.</li>
+    <li><b>Trans strana</b> (otpremna) — okrenuta ka ćelijskoj membrani; odatle kreću gotovi proizvodi.</li>
+    <li><b>Vezikule</b> — sitni membranski mehurići koji prenose materije do i od aparata.</li>
+  </ul>
+  <div class="slidenum">3</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+<!-- 4. FUNKCIJE -->
+<section class="slide">
+  <h2>Funkcije</h2>
+  <ul>
+    <li><b>Dorada (modifikacija)</b> — dovršava proteine i masti, npr. dodaje šećere (glikozilacija).</li>
+    <li><b>Sortiranje</b> — razvrstava molekule i šalje svaki na pravu adresu u ćeliji.</li>
+    <li><b>Pakovanje</b> — zatvara gotove proizvode u vezikule za transport ili izlučivanje.</li>
+    <li><b>Stvaranje lizozoma</b> — pravi mehuriće pune enzima za "varenje" u ćeliji.</li>
+  </ul>
+  <div class="slidenum">4</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+<!-- 5. KAKO RADI / SARADNJA -->
+<section class="slide">
+  <h2>Kako radi — put proteina</h2>
+  <div class="two-col">
+    <div class="card">
+      <h3>1. Dolazak</h3>
+      <p>Endoplazmatični retikulum pravi proteine i šalje ih u vezikulama na <b>cis stranu</b> aparata.</p>
+    </div>
+    <div class="card">
+      <h3>2. Dorada</h3>
+      <p>Prolazeći kroz cisterne, proteini se <b>menjaju, popravljaju i obeležavaju</b>.</p>
+    </div>
+    <div class="card">
+      <h3>3. Otprema</h3>
+      <p>Sa <b>trans strane</b> izlaze u vezikulama — ka membrani ili van ćelije.</p>
+    </div>
+  </div>
+  <div class="highlight" style="margin-top:30px;">
+    Poređenje: Goldžijev aparat je kao <b>pošta ćelije</b> 📦 — prima, obrađuje, pakuje i šalje pošiljke.
+  </div>
+  <div class="slidenum">5</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+<!-- 6. ZANIMLJIVOSTI -->
+<section class="slide">
+  <h2>Zanimljivosti</h2>
+  <ul>
+    <li>U <b>žlezdanim ćelijama</b> (npr. koje luče enzime ili hormone) Goldžijev aparat je posebno razvijen.</li>
+    <li>Bez njega ćelija ne bi mogla pravilno da <b>izlučuje</b> potrebne materije.</li>
+    <li>Kod biljaka učestvuje i u <b>građenju ćelijskog zida</b>.</li>
+    <li>Camillo Golgi je 1906. dobio <b>Nobelovu nagradu</b> (za istraživanja nervnog sistema).</li>
+  </ul>
+  <div class="slidenum">6</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+<!-- 7. SAŽETAK -->
+<section class="slide">
+  <h2>Sažetak</h2>
+  <ul>
+    <li>Goldžijev aparat je <b>membranska organela</b> od poslaganih cisterni.</li>
+    <li>Ima <b>cis</b> (prijemnu) i <b>trans</b> (otpremnu) stranu.</li>
+    <li>Funkcije: <b>dorada, sortiranje, pakovanje</b> proteina i masti + stvaranje <b>lizozoma</b>.</li>
+    <li>Sarađuje s <b>endoplazmatičnim retikulumom</b> — zajedno čine transportni sistem ćelije.</li>
+  </ul>
+  <div class="highlight">
+    Zapamti jednom rečenicom: <b>Goldžijev aparat je „pošta" ćelije</b> koja dorađuje i isporučuje proizvode.
+  </div>
+  <div class="slidenum">7</div>
+  <div class="footer-note">Goldžijev aparat</div>
+</section>
+
+</body>
+</html>

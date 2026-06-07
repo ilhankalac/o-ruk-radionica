@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" font-family="monospace">
+  <rect width="600" height="300" fill="#000000"/>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#003b00"/>
+      <stop offset="60%" stop-color="#00ff41"/>
+      <stop offset="100%" stop-color="#aaffaa"/>
+    </linearGradient>
+  </defs>
+
+  <g font-size="16" letter-spacing="1">
+    <text x="20"  y="0"   fill="url(#fade)">0<tspan x="20" dy="20">1</tspan><tspan x="20" dy="20">0</tspan><tspan x="20" dy="20">1</tspan><tspan x="20" dy="20">1</tspan><tspan x="20" dy="20">0</tspan><tspan x="20" dy="20">1</tspan></text>
+    <text x="55"  y="40"  fill="url(#fade)">1<tspan x="55" dy="20">0</tspan><tspan x="55" dy="20">0</tspan><tspan x="55" dy="20">1</tspan><tspan x="55" dy="20">0</tspan><tspan x="55" dy="20">1</tspan></text>
+    <text x="90"  y="-10" fill="url(#fade)">0<tspan x="90" dy="20">1</tspan><tspan x="90" dy="20">1</tspan><tspan x="90" dy="20">0</tspan><tspan x="90" dy="20">1</tspan><tspan x="90" dy="20">0</tspan><tspan x="90" dy="20">0</tspan><tspan x="90" dy="20">1</tspan></text>
+    <text x="125" y="60"  fill="url(#fade)">1<tspan x="125" dy="20">1</tspan><tspan x="125" dy="20">0</tspan><tspan x="125" dy="20">1</tspan><tspan x="125" dy="20">0</tspan></text>
+    <text x="160" y="20"  fill="url(#fade)">0<tspan x="160" dy="20">0</tspan><tspan x="160" dy="20">1</tspan><tspan x="160" dy="20">1</tspan><tspan x="160" dy="20">0</tspan><tspan x="160" dy="20">1</tspan><tspan x="160" dy="20">1</tspan></text>
+    <text x="195" y="-20" fill="url(#fade)">1<tspan x="195" dy="20">0</tspan><tspan x="195" dy="20">1</tspan><tspan x="195" dy="20">0</tspan><tspan x="195" dy="20">0</tspan><tspan x="195" dy="20">1</tspan><tspan x="195" dy="20">0</tspan><tspan x="195" dy="20">1</tspan></text>
+    <text x="230" y="50"  fill="url(#fade)">0<tspan x="230" dy="20">1</tspan><tspan x="230" dy="20">0</tspan><tspan x="230" dy="20">1</tspan><tspan x="230" dy="20">1</tspan><tspan x="230" dy="20">0</tspan></text>
+    <text x="265" y="10"  fill="url(#fade)">1<tspan x="265" dy="20">1</tspan><tspan x="265" dy="20">0</tspan><tspan x="265" dy="20">0</tspan><tspan x="265" dy="20">1</tspan><tspan x="265" dy="20">0</tspan><tspan x="265" dy="20">1</tspan></text>
+    <text x="300" y="70"  fill="url(#fade)">0<tspan x="300" dy="20">0</tspan><tspan x="300" dy="20">1</tspan><tspan x="300" dy="20">0</tspan></text>
+    <text x="335" y="-10" fill="url(#fade)">1<tspan x="335" dy="20">0</tspan><tspan x="335" dy="20">1</tspan><tspan x="335" dy="20">1</tspan><tspan x="335" dy="20">0</tspan><tspan x="335" dy="20">1</tspan><tspan x="335" dy="20">0</tspan></text>
+    <text x="370" y="40"  fill="url(#fade)">0<tspan x="370" dy="20">1</tspan><tspan x="370" dy="20">1</tspan><tspan x="370" dy="20">0</tspan><tspan x="370" dy="20">0</tspan><tspan x="370" dy="20">1</tspan></text>
+    <text x="405" y="0"   fill="url(#fade)">1<tspan x="405" dy="20">0</tspan><tspan x="405" dy="20">0</tspan><tspan x="405" dy="20">1</tspan><tspan x="405" dy="20">1</tspan><tspan x="405" dy="20">0</tspan><tspan x="405" dy="20">1</tspan></text>
+    <text x="440" y="55"  fill="url(#fade)">0<tspan x="440" dy="20">1</tspan><tspan x="440" dy="20">0</tspan><tspan x="440" dy="20">1</tspan><tspan x="440" dy="20">0</tspan></text>
+    <text x="475" y="15"  fill="url(#fade)">1<tspan x="475" dy="20">1</tspan><tspan x="475" dy="20">0</tspan><tspan x="475" dy="20">1</tspan><tspan x="475" dy="20">0</tspan><tspan x="475" dy="20">0</tspan><tspan x="475" dy="20">1</tspan></text>
+    <text x="510" y="-20" fill="url(#fade)">0<tspan x="510" dy="20">0</tspan><tspan x="510" dy="20">1</tspan><tspan x="510" dy="20">1</tspan><tspan x="510" dy="20">0</tspan><tspan x="510" dy="20">1</tspan><tspan x="510" dy="20">0</tspan><tspan x="510" dy="20">1</tspan></text>
+    <text x="545" y="45"  fill="url(#fade)">1<tspan x="545" dy="20">0</tspan><tspan x="545" dy="20">0</tspan><tspan x="545" dy="20">1</tspan><tspan x="545" dy="20">0</tspan></text>
+    <text x="580" y="5"   fill="url(#fade)">0<tspan x="580" dy="20">1</tspan><tspan x="580" dy="20">1</tspan><tspan x="580" dy="20">0</tspan><tspan x="580" dy="20">1</tspan><tspan x="580" dy="20">0</tspan></text>
+  </g>
+
+  <text x="300" y="165" fill="#00ff41" font-size="56" font-weight="bold" text-anchor="middle" letter-spacing="4" style="text-shadow:0 0 10px #00ff41;">MATRIX</text>
+</svg>
